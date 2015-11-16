@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Togga Stats</title>
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	
+  </head>
+  <body>
+
+    <div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="responsive-container">
+					<div class="dummy"></div>
+					<div class="img-container">
+						<img alt="Togga Stats" src="img/logo.png" class="img-responsive"> 
+					</div>
+				</div>
+				
+				<div class="button-container">
+					<button id="button-update" type="button" class="btn btn-block btn-lg btn-success">
+						<span>Update Player Data</span>
+					</button>
+				</div>
+				
+				<div id="progress-stats" class="progress progress-striped active" style="display:none;">
+					<span id="progress-bar-label"></span>
+					<div id="progress-bar-stats" class="progress-bar" role="progressbar" aria-valuenow="-1" aria-valuemin="0" aria-valuemax="100">
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+	
+	<div class="alerts">
+		<div id="alert-popup" class="alert alert-danger" role="alert" style="display:none;">
+			<button type="button" class="close" data-hide="alert">&times;</button>
+			<span id="alert-text"></span>
+		</div>
+	</div>
+	
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+	<script src="js/playerscript.js"></script>
+	
+  </body>
+</html>
